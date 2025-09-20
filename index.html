@@ -1,12 +1,76 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Ruth Aramio</title>
-</head>
-<body>
-  <h1>¡Hola! Soy Ruth Aramio</h1>
-  <p>Bienvenid@ a mi portafolio web 🚀</p>
-</body>
-</html>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Pantalla inicial -->
+  <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-300 to-pink-500">
+    <h1 class="text-5xl font-bold mb-4 text-white drop-shadow-lg" data-aos="zoom-in">Ruth Arami Delgado Ozorio</h1>
+    <p class="text-lg text-pink-100" data-aos="fade-up">Mi portafolio web ✨</p>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="min-h-screen flex flex-col items-center justify-center">
+    <p id="toggleProyectos" class="text-2xl cursor-pointer text-pink-700 hover:text-pink-900 transition" data-aos="fade-up">
+      Algunos de mis proyectos universitarios
+    </p>
+
+    <div id="proyectos" class="hidden mt-6 space-y-6 text-center max-w-2xl" data-aos="fade-up">
+      
+      <!-- Proyecto: BibliotecaVirtual -->
+      <div class="bg-white p-6 rounded-lg border border-pink-200 shadow hover:bg-pink-100 transition">
+        <h3 class="text-2xl font-bold mb-2 text-pink-700">BibliotecaVirtual</h3>
+        <p class="text-gray-600 mb-4">
+          Sistema universitario en Java para gestionar libros y usuarios. 
+          Incluye estructuras de archivos, interfaz de consola y almacenamiento básico.
+        </p>
+        <a href="https://github.com/rutharamio/BibliotecaVirtual" target="_blank" 
+           class="text-pink-500 hover:text-pink-700 font-semibold">
+          Ver en GitHub
+        </a>
+      </div>
+
+      <!-- Proyecto: ToDoList -->
+      <div class="bg-white p-6 rounded-lg border border-pink-200 shadow hover:bg-pink-100 transition">
+        <h3 class="text-2xl font-bold mb-2 text-pink-700">ToDoList (Frontend + Backend)</h3>
+        <p class="text-gray-600 mb-4">
+          Proyecto universitario de gestión de tareas. 
+          <strong>Frontend</strong> en Angular para la interfaz de usuario con autenticación JWT y CRUD, 
+          y <strong>Backend</strong> en Flask (Python) con API REST protegida con JWT, CRUD de tareas, filtros y soporte JSON/XML.
+        </p>
+        <div class="space-x-4">
+          <a href="https://gitlab.com/rutharamio/todolist_frontend" target="_blank" 
+             class="text-pink-500 hover:text-pink-700 font-semibold">
+            Frontend
+          </a>
+          <a href="https://gitlab.com/rutharamio/todolist_jwt" target="_blank" 
+             class="text-pink-500 hover:text-pink-700 font-semibold">
+            Backend
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="min-h-screen flex flex-col items-center justify-center">
+    <p id="toggleContacto" class="text-2xl cursor-pointer text-pink-700 hover:text-pink-900 transition" data-aos="fade-up">
+      Contáctame
+    </p>
+    <div id="contacto" class="hidden mt-6 space-y-4 text-center" data-aos="fade-up">
+      <p>
+        <i class="fas fa-envelope text-pink-500"></i>
+        <a href="mailto:rutharamio@gmail.com" class="ml-2 text-pink-600 hover:text-pink-800 font-semibold">rutharamio@gmail.com</a>
+      </p>
+      <p>
+        <i class="fab fa-linkedin text-blue-500"></i>
+        <a href="https://www.linkedin.com/in/ruth-arami-delgado-ozorio" target="_blank" class="ml-2 text-pink-600 hover:text-pink-800 font-semibold">LinkedIn</a>
+      </p>
+      <p>
+        <i class="fab fa-github text-gray-700"></i>
+        <a href="https://github.com/rutharamio" target="_blank" class="ml-2 text-pink-600 hover:text-pink-800 font-semibold">GitHub</a>
+      </p>
+      <p>
+        <i class="fab fa-gitlab text-orange-500"></i>
+        <a href="https://gitlab.com/rutharamio" target="_blank" class="ml-2 text-pink-600 hover:text-pink-800 font-semibold">GitLab</a>
+      </p>
+    </div>
+  </section>
