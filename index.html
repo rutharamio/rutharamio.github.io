@@ -1,9 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Ruth</title>
+
+  <!-- Tailwind CSS vía CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Librería AOS para animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body class="bg-pink-50 text-gray-800 font-sans">
 
   <!-- Pantalla inicial -->
   <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-300 to-pink-500">
     <h1 class="text-5xl font-bold mb-4 text-white drop-shadow-lg" data-aos="zoom-in">Ruth Arami Delgado Ozorio</h1>
-    <p class="text-lg text-pink-100" data-aos="fade-up">Mi portafolio web ✨</p>
+    <p class="text-lg text-pink-100" data-aos="fade-up">Mi portafolio web</p>
   </section>
 
   <!-- Proyectos -->
@@ -74,3 +90,25 @@
       </p>
     </div>
   </section>
+
+  <!-- Script interactividad -->
+  <script>
+    document.getElementById("toggleProyectos").addEventListener("click", () => {
+      document.getElementById("proyectos").classList.toggle("hidden");
+    });
+    document.getElementById("toggleContacto").addEventListener("click", () => {
+      document.getElementById("contacto").classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
